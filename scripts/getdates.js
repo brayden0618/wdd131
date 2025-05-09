@@ -9,5 +9,3 @@ if (
     const lastModified = document.querySelector("#lastModified");
     lastModified.innerHTML = `Last modified: ${document.lastModified}`;
 }
-alert("This page was last modified on " + document.lastModified);
-const lastModified = document.querySelector("#lastModified");
