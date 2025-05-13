@@ -1,5 +1,5 @@
 :root{
-    --main-color: #4CAF50;
+    --main-color: #1500ff;
     --secondary-color: #f1f1f1;
     --font-family: "Roboto", sans-serif;
 }
@@ -48,6 +48,12 @@ figure{
     background-color: var(--main-color);
     border-radius: 5px;
     color: var(--secondary-color);
+}
+footer{
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    padding: 20px;
+    text-align: center;
 }
 img{
     width: 100%;
