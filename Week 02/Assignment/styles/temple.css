@@ -1,0 +1,114 @@
+:root{
+    --main-color: #4CAF50;
+    --secondary-color: #f1f1f1;
+    --font-family: "Roboto", sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--font-family);
+}
+h1{
+    text-align: center;
+    margin: 20px 0;
+    color: var(--main-color);
+    background-color: var(--secondary-color);
+    padding: 10px;
+}
+p{
+    text-align: center;
+    margin: 20px 0;
+    margin: 1rem;
+    border: var(--secondary-color) solid 1px;
+    padding: 10px;
+    background-color: var(--main-color);
+}
+header{
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+}
+main{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--secondary-color);
+}
+figure{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: var(--main-color);
+    border-radius: 5px;
+    color: var(--secondary-color);
+}
+img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+#menu{
+    display: block;
+    font-size: 2rem;
+    margin: 0 auto;
+    padding: 10px;
+    text-decoration: none;
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+}
+#menu::before{
+    content: "☰";
+}
+#menu:hover{
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+}
+nav{
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+nav a:hover{
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+}
+.navigation{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    max-width: fit-content;
+}
+.navigation li{
+    display: none;
+}
+.navigation a{
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    color: var(--secondary-color);
+    padding: 10px;
+    border-radius: 5px;
+}
+.navigation a:hover,
+.navigation a:active{
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+}
+.show li{
+    display: block;
+}
+#menu.show::before{
+    content: "✖";
+}

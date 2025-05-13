@@ -1,0 +1,20 @@
+@media only screen and (min-width: 1200px) {
+    h1 {
+        font-size: 3rem;
+    }
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+    }
+    .navigation li {
+        display: inline-block;
+        flex: 1 1 auto;
+        margin: 0 20px;
+    }
+    .navigation a {
+        text-align: center;
+    }
+    #menu {
+        display: none;
+    }
+}
