@@ -18,6 +18,13 @@ h1{
     background-color: var(--secondary-color);
     padding: 10px;
 }
+h2{
+    text-align: center;
+    margin: 20px 0;
+    color: var(--main-color);
+    background-color: var(--secondary-color);
+    padding: 10px;
+}
 p{
     text-align: center;
     margin: 20px 0;
