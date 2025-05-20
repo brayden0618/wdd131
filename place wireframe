@@ -13,7 +13,7 @@
         <mxCell id="at-OflMHqIvP7Dj17RHG-5" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.patternFillRect;fillStyle=hor;step=5;fillStrokeWidth=0.2;fillStrokeColor=#dddddd;" vertex="1" parent="1">
           <mxGeometry x="190" y="130" width="800" height="480" as="geometry" />
         </mxCell>
-        <mxCell id="at-OflMHqIvP7Dj17RHG-6" value="small Image" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="at-OflMHqIvP7Dj17RHG-6" value="Large&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;Image&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="550" y="340" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="at-OflMHqIvP7Dj17RHG-8" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
@@ -52,7 +52,7 @@
         <mxCell id="at-OflMHqIvP7Dj17RHG-28" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.patternFillRect;fillStyle=diag;step=5;fillStrokeWidth=0.2;fillStrokeColor=#dddddd;" vertex="1" parent="1">
           <mxGeometry x="200" y="1550" width="760" height="500" as="geometry" />
         </mxCell>
-        <mxCell id="at-OflMHqIvP7Dj17RHG-29" value="Large Image" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="at-OflMHqIvP7Dj17RHG-29" value="Small Image" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="520" y="1760" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="at-OflMHqIvP7Dj17RHG-41" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
