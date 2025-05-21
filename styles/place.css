@@ -1,0 +1,122 @@
+:root{
+    --base-color: #008e11;
+    --background-color: #ffffff;
+    --text-color: #ce0000;
+    --font-family: "Roboto", sans-serif;
+    --font-size: 16px;
+}
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+}
+header {
+    background-color: var(--base-color);
+    padding: 20px;
+    text-align: center;
+}
+header h1 {
+    color: var(--background-color);
+}
+header p {
+    color: var(--background-color);
+}
+h1 {
+    font-size: 2rem;
+    color: var(--text-color);
+}
+h2 {
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+p {
+    font-size: 1rem;
+    color: var(--text-color);
+}
+footer {
+    background-color: var(--text-color);
+    padding: 10px;
+    text-align: center;
+}
+footer p {
+    color: var(--background-color);
+}
+.weather-icon .emoji {
+    display: inline-block;
+}
+.weather-icon .svg {
+    display: none;
+    width: 50px;
+    height: 50px;
+}
+@media (max-width: 1200px) {
+    .weather-icon .emoji {
+        display: none;
+    }
+    .weather-icon .svg {
+        display: inline-block;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    h1 {
+        font-size: 2rem;
+    }
+    .navigation {
+        display: block;
+    }
+    .navigation li {
+        display: block;
+        margin: 10px 0;
+    }
+    #menu {
+        display: block;
+    }
+}
+.hero {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+}
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.windchill {
+    background-color: var(--base-color);
+    color: var(--background-color);
+    font-size: 1rem;
+    padding: 1rem;
+    border: 1px solid var(--background-color);
+    margin: 1rem 0;
+}
+.windchill input {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+.windchill button {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.windchill button:hover {
+    background-color: var(--text-color);
+    color: var(--background-color);
+}
+.windchill h1 {
+    color: var(--background-color);
+}
+.windchill p {
+    color: var(--background-color);
+}
