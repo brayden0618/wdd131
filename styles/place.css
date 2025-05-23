@@ -5,6 +5,11 @@
     --font-family: "Roboto", sans-serif;
     --font-size: 16px;
 }
+.emoji {
+    font-size: 2rem;
+    display: inline-block;
+    margin: 0 10px;
+}
 ::after {
     content: "";
     display: block;
