@@ -1,0 +1,35 @@
+:root{
+    --table-border-color: #000000;
+    --table-header-bg-color: #ffffff;
+    --table-row-hover-bg-color: #7f6a6a;
+}
+body {
+    font-family: Arial, sans-serif;
+    padding: 5%;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+th, td {
+    border: 1px solid var(--table-border-color);
+    padding: 8px;
+    text-align: left;
+}
+thead th,
+tbody td {
+    background-color: var(--table-header-bg-color);
+}
+tbody tr:hover {
+    background-color: var(--table-row-hover-bg-color);
+}
+th {
+    font-weight: bold;
+    color: #000000;
+}
