@@ -1,0 +1,141 @@
+:root{
+    --main-color: #1500ff;
+    --secondary-color: #f1f1f1;
+    --font-family: "Roboto", sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--font-family);
+}
+h1{
+    text-align: center;
+    margin: 20px 0;
+    color: var(--main-color);
+    background-color: var(--secondary-color);
+    padding: 10px;
+}
+h2{
+    text-align: center;
+    margin: 20px 0;
+    color: var(--main-color);
+    background-color: var(--secondary-color);
+    padding: 10px;
+}
+p{
+    text-align: center;
+    margin: 1rem;
+    border: var(--secondary-color) solid 1px;
+    padding: 10px;
+    background-color: var(--main-color);
+    color: var(--secondary-color)
+}
+header{
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+}
+main{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--secondary-color);
+}
+section{
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+}
+section:hover{
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transform: scale(1.01);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+section img {
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+footer{
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    padding: 20px;
+    text-align: center;
+}
+img{
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+#menu{
+    display: block;
+    font-size: 2rem;
+    margin: 0 auto;
+    padding: 10px;
+    text-decoration: none;
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+}
+#menu::before{
+    content: "☰";
+}
+#menu:hover{
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+}
+#menu.show::before{
+    content: "✖";
+}
+nav{
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    padding: 10px;
+    text-align: center;
+    display: flex;
+}
+nav a:hover{
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+}
+.navigation{
+    display: none;
+    flex-direction: column;
+    background-color: var(--main-color);
+    position: absolute;
+    right: 0;
+}
+.navigation a{
+    color: var(--secondary-color);
+    display: flex;
+    position: relative;
+    text-align: center;
+}
+.navigation a:hover,
+.navigation a.active {
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+    font-weight: bold;
+}
+.navigation.show{
+    display: flex;
+}
+@media only screen and (min-width: 768px) {
+    #menu{
+        display: none;
+    }
+    .navigation {
+        display: flex !important;
+        position: static;
+        flex-direction: row;
+        justify-content: space-around;
+        width: auto;
+    }
+}
