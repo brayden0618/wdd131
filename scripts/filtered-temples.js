@@ -16,12 +16,13 @@ document.addEventListener("DOMContentLoaded", () => {
         mainNav.classList.toggle("show");
         menubutton.classList.toggle("show");
     });
-    document.querySelectorAll('navigation a').forEach(link => {
+    document.querySelectorAll('.navigation a').forEach(link => {
         link.addEventListener('click', () => {
             mainNav.classList.remove('show');
             menubutton.classList.remove('show');
         });
     });
+    createTempleCard(temples);
 });
 const temples = [
   {
@@ -30,15 +31,15 @@ const temples = [
     dedicated: "2005, August, 7",
     area: 11500,
     imageUrl:
-    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg"
-  },
+    "https://churchofjesuschristtemples.org/assets/img/temples/aba-nigeria-temple/aba-nigeria-temple-1811.jpg"  
+    },
   {
     templeName: "Manti Utah",
     location: "Manti, Utah, United States",
     dedicated: "1888, May, 21",
     area: 74792,
     imageUrl:
-    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manti-utah/400x250/manti-temple-768192-wallpaper.jpg"
+    "https://churchofjesuschristtemples.org/assets/img/temples/manti-utah-temple/manti-utah-temple-55323.jpg"
   },
   {
     templeName: "Payson Utah",
@@ -46,7 +47,7 @@ const temples = [
     dedicated: "2015, June, 7",
     area: 96630,
     imageUrl:
-    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x225/payson-utah-temple-exterior-1416671-wallpaper.jpg"
+    "https://churchofjesuschristtemples.org/assets/img/temples/payson-utah-temple/payson-utah-temple-55332.jpg"
   },
   {
     templeName: "Yigo Guam",
@@ -54,7 +55,7 @@ const temples = [
     dedicated: "2020, May, 2",
     area: 6861,
     imageUrl:
-    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/yigo-guam/400x250/yigo_guam_temple_2.jpg"
+    "https://churchofjesuschristtemples.org/assets/img/temples/yigo-guam-temple/yigo-guam-temple-26495.jpg"
   },
   {
     templeName: "Washington D.C.",
@@ -62,7 +63,7 @@ const temples = [
     dedicated: "1974, November, 19",
     area: 156558,
     imageUrl:
-    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/washington-dc/400x250/washington_dc_temple-exterior-2.jpeg"
+    "https://churchofjesuschristtemples.org/assets/img/temples/washington-d.c.-temple/washington-d.c.-temple-41398.jpg"
   },
   {
     templeName: "Lima Perú",
@@ -70,7 +71,7 @@ const temples = [
     dedicated: "1986, January, 10",
     area: 9600,
     imageUrl:
-    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/lima-peru/400x250/lima-peru-temple-evening-1075606-wallpaper.jpg"
+    "https://churchofjesuschristtemples.org/assets/img/temples/lima-peru-temple/lima-peru-temple-9681.jpg"
   },
   {
     templeName: "Mexico City Mexico",
@@ -78,7 +79,7 @@ const temples = [
     dedicated: "1983, December, 2",
     area: 116642,
     imageUrl:
-    "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+    "https://churchofjesuschristtemples.org/assets/img/temples/mexico-city-mexico-temple/mexico-city-mexico-temple-20742.jpg"
     },
     {
     templeName: "Salt Lake City Utah",
@@ -107,7 +108,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 const oldTemplesLink = document.querySelector("#Old")
 oldTemplesLink.addEventListener("click", () => {
-    const oldTemples = temples.filter(t => new Date(t.dedicated).getFullYear() < 2000);
+    const oldTemples = temples.filter(t => new Date(t.dedicated).getFullYear() < 1900);
     createTempleCard(oldTemples);
 });
 const newTemplesLink = document.querySelector("#New")
@@ -122,7 +123,7 @@ largeTemplesLink.addEventListener("click", () => {
 });
 const smallTemplesLink = document.querySelector("#Small")
 smallTemplesLink.addEventListener("click", () => {
-    const smallTemples = temples.filter(t => t.area < 90000);
+    const smallTemples = temples.filter(t => t.area < 10000);
     createTempleCard(smallTemples);
 });
 const allTemplesLink = document.querySelector("#Home")
@@ -132,7 +133,7 @@ allTemplesLink.addEventListener("click", () => {
 function createTempleCard(filteredTemples) {
     const container = document.querySelector(".temple-pictures");
     container.innerHTML = "";
-    filteredTemples.forEach((temple) => {
+    filteredTemples.forEach((temple, index) => {
         let card = document.createElement("section");
         let templeName = document.createElement("h2");
         let location = document.createElement("p");
@@ -145,7 +146,11 @@ function createTempleCard(filteredTemples) {
         area.innerHTML = `Area: ${temple.area} sq. ft.`;
         image.src = temple.imageUrl;
         image.alt = `${temple.templeName} temple`;
-        image.loading = "lazy";
+        image.width = 300;
+        image.height = 200;
+        if (index !== 0) {
+            image.loading = "lazy";
+        }
         card.appendChild(image);
         card.appendChild(templeName);
         card.appendChild(location);

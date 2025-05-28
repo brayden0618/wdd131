@@ -8,9 +8,9 @@
     <meta name="description" content="A collection of temple pictures.">
     <link rel="stylesheet" href="styles/filtered-temples.css">
     <script src="scripts/filtered-temples.js" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+    <link rel="preload" as="image" href="https://churchofjesuschristtemples.org/assets/img/temples/aba-nigeria-temple/aba-nigeria-temple-1811.jpg">
 </head>
 <body>
     <header>
@@ -28,7 +28,15 @@
     </header>
     <main>
         <h2>Temples around the world</h2>
-        <div class="temple-pictures"></div>
+        <div class="temple-pictures">
+            <section>
+                <img src = "https://churchofjesuschristtemples.org/assets/img/temples/aba-nigeria-temple/aba-nigeria-temple-1811.jpg" alt="Aba Nigeria Temple" width="300" height="200">
+                <h2>Aba Nigeria</h2>
+                <p>Location: Aba, Nigeria</p>
+                <p>Dedicated: 2005, August, 7</p>
+                <p>Area: 11500 sq. ft.</p>
+            </section>
+        </div>
     </main>
     <footer>
         <p><span id="currentYear"></span> &copy; Brayden Wayman, Utah</p>
