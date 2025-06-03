@@ -44,13 +44,15 @@
         </fieldset>
         <fieldset>
             <legend>Useful Features (optional)</legend>
-            <label for="features">What features did you find useful?</label>
+            <label id="features">What features did you find useful?</label>
             <input type="checkbox" id="feature1" name="features" value="Battery Life">
             <label for="feature1">Battery Life</label>
             <input type="checkbox" id="feature2" name="features" value="Camera Quality">
             <label for="feature2">Camera Quality</label>
             <input type="checkbox" id="feature3" name="features" value="Performance">
             <label for="feature3">Performance</label>
+            <input type="checkbox" id="feature4" name="features" value="Design">
+            <label for="feature4">Design</label>
         </fieldset>
         <fieldset>
             <legend>Review Comments (optional)</legend>
@@ -64,9 +66,9 @@
         </fieldset>
         <button type="submit">Post Review</button>
     </form>
+    <footer>
+        <p><span id="currentYear"></span> &copy; Brayden Wayman, Utah</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>  
 </body>
-<footer>
-    <p><span id="currentYear"></span> &copy; Brayden Wayman, Utah</p>
-    <p>Last Modified: <span id="lastModified"></span></p>
-</footer>
 </html>

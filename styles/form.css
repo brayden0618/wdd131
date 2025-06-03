@@ -5,9 +5,10 @@
     --border-radius: 5px;
     --padding: 12px 20px;
     --margin: 10px 0;
+    --font-family: 'Roboto', sans-serif;
 }
 body {
-    font-family: Arial, sans-serif;
+    font-family: var(--font-family);
     background-color: var(--secondary-color);
     color: var(--text-color);
 }
@@ -57,9 +58,6 @@ input[type="submit"] {
     padding: var(--padding);
     border-radius: var(--border-radius);
     cursor: pointer;
-}
-input[type="submit"]:hover {
-    background-color: darken(var(--primary-color), 10%);
 }
 input[type="radio"],
 input[type="checkbox"] {
