@@ -1,0 +1,91 @@
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #4d2c2c;
+    --text-color: #2f32be;
+    --border-radius: 5px;
+    --padding: 12px 20px;
+    --margin: 10px 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+h1 {
+    text-align: center;
+    color: var(--primary-color);
+}
+legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+p {
+    text-align: left;
+    color: var(--text-color);
+}
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: var(--text-color);
+    background-color: white;
+}
+form {
+    background-color: white;
+    padding: var(--padding);
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: auto;
+}
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="radio"],
+input[type="checkbox"],
+textarea {
+    width: 100%;
+    padding: var(--padding);
+    margin: var(--margin);
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+    box-sizing: border-box;
+}
+input[type="submit"] {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: var(--padding);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: darken(var(--primary-color), 10%);
+}
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+@media (max-width: 600px) {
+    form {
+        padding: 10px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    textarea {
+        padding: 10px;
+    }
+    input[type="submit"] {
+        padding: 10px;
+    }
+}

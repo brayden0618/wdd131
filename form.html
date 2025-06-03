@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Assignment</title>
+    <meta name="description" content="A form assignment to demonstrate HTML and JavaScript skills.">
+    <meta name="author" content="Brayden Wayman">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <h1>Product Review</h1>
+    <form method="get" action="review.html" class="review-form">
+        <fieldset>
+            <legend>Product Selection</legend>
+            <select id="product" name="product">
+                <option value="" disabled selected>Select a product</option>
+                <option value="laptop">Laptop</option>
+                <option value="smartphone">Smartphone</option>
+                <option value="tablet">Tablet</option>
+                <option value="smartwatch">Smartwatch</option>
+                <option value="headphones">Headphones</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Rating*</legend>
+            <p>Please rate the product:</p>
+            <input type="radio" id="one-star" name="rating" value="1" required>
+            <label for="one-star">⭐</label>
+            <input type="radio" id="two-stars" name="rating" value="2" required>
+            <label for="two-stars">⭐⭐</label>
+            <input type="radio" id="three-stars" name="rating" value="3" required>
+            <label for="three-stars">⭐⭐⭐</label>
+            <input type="radio" id="four-stars" name="rating" value="4" required>
+            <label for="four-stars">⭐⭐⭐⭐</label>
+            <input type="radio" id="five-stars" name="rating" value="5" required>
+            <label for="five-stars">⭐⭐⭐⭐⭐</label>
+        </fieldset>
+        <fieldset>
+            <legend>Date of Installation*</legend>
+            <label for="install-date">Select date:</label>
+            <input type="date" id="install-date" name="install-date" required>
+        </fieldset>
+        <fieldset>
+            <legend>Useful Features (optional)</legend>
+            <label for="features">What features did you find useful?</label>
+            <input type="checkbox" id="feature1" name="features" value="Battery Life">
+            <label for="feature1">Battery Life</label>
+            <input type="checkbox" id="feature2" name="features" value="Camera Quality">
+            <label for="feature2">Camera Quality</label>
+            <input type="checkbox" id="feature3" name="features" value="Performance">
+            <label for="feature3">Performance</label>
+        </fieldset>
+        <fieldset>
+            <legend>Review Comments (optional)</legend>
+            <label for="comments">Please share your review:</label>
+            <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Write your review here..."></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>User Name (optional)</legend>
+            <label for="user-name">Enter your name:</label>
+            <input type="text" id="user-name" name="user-name">
+        </fieldset>
+        <button type="submit">Post Review</button>
+    </form>
+</body>
+<footer>
+    <p><span id="currentYear"></span> &copy; Brayden Wayman, Utah</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+</footer>
+</html>
