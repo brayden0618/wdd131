@@ -36,22 +36,40 @@ const products = [
         description: "Headphones are a pair of small loudspeakers that are designed to be worn on or over the ears.",
     },
 ];
-localStorage.setItem("products", JSON.stringify(products));
-const form = document.querySelector("form");
-form.addEventListener("submit", (event) => {
-    event.preventDefault();
-    const formData = new FormData(form);
-    const selectedProduct = formData.get("product");
-    const product = products.find((p) => p.name === selectedProduct);
-    if (product) {
+if (!localStorage.getItem("products")) {
+    localStorage.setItem("products", JSON.stringify(products));
+}
+let product = {};
+try {
+    product = JSON.parse(localStorage.getItem("products")) || {};
+} catch (error) {
+    console.error("Error parsing products from localStorage:", error);
+}
+document.addEventListener("DOMContentLoaded", () => {
+    const form = document.querySelector("form");
+    form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const formData = new FormData(form);
+        const selectedProduct = formData.get("product");
+        const rating = formData.get("rating");
+        const installDate = formData.get("install-date");
+        if (!selectedProduct || !rating || !installDate) {
+            alert("Please fill in all required fields.");
+            return;
+        }
         const review = {
-            product: product.name,
-            rating: formData.get("rating"),
-            installDate: formData.get("install-date"),
+            product: selectedProduct,
+            rating: rating,
+            installDate: installDate,
             features: formData.getAll("features"),
-            comments: formData.get("comments"),
-            userName: formData.get("user-name"),
+            comments: formData.get("comments") || "",
+            userName: formData.get("user-name") || "Anonymous",
         };
         console.log("Review submitted:", review);
-    }
+        const reviews = JSON.parse(localStorage.getItem("reviews")) || [];
+        reviews.push(review);
+        localStorage.setItem("reviews", JSON.stringify(reviews));
+        alert("Review submitted successfully!");
+        form.reset();
+    });
 });
