@@ -31,4 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.body.appendChild(visitDisplay);
     const footer = document.querySelector("footer");
     footer.appendChild(visitDisplay);
+    const boardGames = ["Dice Throne", "Settlers of Catan", "Uno"];
+    const upperCaseGames = boardGames.map(game => game.toUpperCase());
+    console.log("Uppercase Board Games:", upperCaseGames);
 });
