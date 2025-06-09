@@ -1,0 +1,148 @@
+:root {
+    --background-color: #b10303;
+    --primary-color: #001aff;
+    --secondary-color: #ffee00;
+    --font-family: 'Roboto', sans-serif;
+}
+header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 20px;
+    text-align: center;
+    font-family: var(--font-family);
+    border-radius: 10px;
+}
+body {
+    background-color: var(--background-color);
+    color: var(--secondary-color);
+    font-family: var(--font-family);
+}
+h1, h2, h3 {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    text-align: center;
+    border-radius: 10px;
+}
+p {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+header, footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 10px;
+    text-align: center;
+    font-family: var(--font-family);
+    text-align: center;
+}
+.dice-throne {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.catan {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.uno {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+form {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    display: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+form p {
+    margin-bottom: 10px;
+    text-align: left;
+    font-weight: bold;
+}
+input[type="text"], input[type="email"] {
+    width: 95%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    background-color: white;
+    color: var(--primary-color);
+}
+input[type="submit"] {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 10px;
+    accent-color: var(--primary-color);
+}
+label {
+    display: block;
+    margin-bottom: 20px;
+    color: var(--secondary-color);
+    font-weight: bold;
+    text-align: left;
+}
+fieldset {
+    border: 2px solid var(--secondary-color);
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--background-color);
+}
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 10px;
+    text-align: center;
+    font-family: var(--font-family);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+    input[type="text"], input[type="email"] {
+        width: 95%;
+    }
+    form {
+        padding: 10px;
+    }
+    h1, h2, h3 {
+        font-size: 1.5em;
+    }
+    p {
+        font-size: 1em;
+    }
+    
+}

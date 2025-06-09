@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Board Game Reviews♟️</title>
+    <meta name="author" content="Brayden Wayman">
+    <meta name="description" content="A collection of board game reviews and discussions.">
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/project.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Board Game Reviews♟️</h1>
+        <p>This website is dedicated to reviewing and discussing board games of all kinds. It will help players find the perfect game for their needs.</p>
+    </header>
+    <main>
+        <h2>Here are 3 board games that I really enjoy playing</h2>
+        <section class="dice-throne">
+            <h2>Dice Throne</h2>
+            <picture>
+                <source srcset="images/dice-throne-large.webp" media="(min-width: 1000px)" loading="lazy">
+                <img src="images/dice-throne-small.webp" alt="Dice Throne Game" width="400" height="300" loading="lazy">
+            </picture>
+            <p>This game is called Dice Throne, it just came out a couple years ago and it has quickly become my favorite game.</p>
+            <ul class="dice-throne">
+            <li>Dice Throne is a game where you battle your friends using dice and unique characters with various abilities.</li>
+            <li>You choose a character each with their own unique abilities and playstyles. Using their own dice that comes with that specific character, players can unleash powerful attacks and abilities to defeat their opponents, only if they roll the attack.</li>
+            <li>The objective is to reduce your opponent's health to zero by strategically using your character's abilities and rolling the right combinations of dice.</li>
+            <li>Players rate Dice Throne highly for its engaging gameplay, strategic depth, and the variety of characters available, making each game feel unique.</li>
+            <li>Dice Throne is enjoyed by players who appreciate strategy, luck, and character-based gameplay. It's great for both casual gamers and those who enjoy competitive play.</li>
+            <li>Overall, Dice Throne is a fun and strategic game that combines luck and skill, making it a favorite among board game enthusiasts. It's quickly become one of my favorite board games.</li>
+            <li>Dice Throne is a game that I highly recommend to anyone looking for a fun and engaging board game experience.</li>
+            </ul>
+        </section>
+        <section class="catan">
+            <h2>Settlers of Catan</h2>
+            <picture>
+                <source srcset="images/catan-large.webp" media="(min-width: 1000px)" loading="lazy">
+                <img src="images/catan-small.webp" alt="Catan Game" width="400" height="300" loading="lazy">
+            </picture>
+        <p>Catan is a classic game, it is very engaging and it is perfect for strategy lovers.</p>
+        <ul class="catan">
+            <li>Settlers of Catan is a game where you build settlements, trade resources, and compete for dominance on the island of Catan.</li>
+            <li>You start with two settlements and two roads, and you can build more settlements, cities, and roads by collecting resources like wood, brick, wheat, ore, and sheep.</li>
+            <li>The objective is to be the first player to reach 10 victory points by building settlements, cities, and achieving various achievements.</li>
+            <li>Players rate Settlers of Catan highly for its strategic depth, social interaction through trading, and the replayability of the game.</li>
+            <li>Settlers of Catan is enjoyed by players who appreciate strategy, negotiation, and resource management. It's great for both casual gamers and those who enjoy competitive play.</li>
+            <li>Overall, Settlers of Catan is a classic board game that has stood the test of time and remains a favorite among board game enthusiasts.</li>
+            <li>Settlers of Catan is a game that I highly recommend to anyone looking for a fun and engaging board game experience.</li>
+        </ul>
+        </section>
+        <section class="uno">
+            <h2>Uno</h2>
+            <picture>
+                <source srcset="images/uno-large.webp" media="(min-width: 1000px)" loading="lazy">
+                <img src="images/uno-small.webp" alt="Uno Game" width="400" height="300" loading="lazy">
+            </picture>
+        <p>The classic game of Uno is one of my all time favorite card games.</p>
+        <ul class="uno">
+            <li>Uno is a game where you try to be the first to get rid of all your cards by matching colors or numbers.</li>
+            <li>You start with 7 cards and take turns playing cards that match the top card on the discard pile. If you can't play a card, you draw one from the deck.</li>
+            <li>The objective is to be the first player to play all your cards and shout "Uno!" when you have only one card left.</li>
+            <li>Players rate Uno highly for its simplicity, fast-paced gameplay, and the fun of playing special action cards that can change the game.</li>
+            <li>Uno is enjoyed by players of all ages and is great for family gatherings, parties, and casual gaming sessions.</li>
+            <li>Overall, Uno is a classic card game that is easy to learn and provides hours of entertainment for players of all ages.</li>
+            <li>Uno is a game that I highly recommend to anyone looking for a fun and engaging card game experience.</li>
+        </ul>
+        </section>
+        <form method ="get" action="review.html" class="feedback-form">
+            <h2>Rate Your Favorite Board Game</h2>
+            <fieldset>
+                <legend>Feedback Form</legend>
+                <label for="game">*Select your favorite board game:</label>
+                <label for="dice-throne">
+                    <input type="radio" id="dice-throne" name="game" value="Dice Throne" required>
+                    Dice Throne
+                </label>
+                <label for="catan">
+                    <input type="radio" id="catan" name="game" value="Settlers of Catan" required>
+                    Settlers of Catan
+                </label>
+                <label for="uno">
+                    <input type="radio" id="uno" name="game" value="Uno" required>
+                    Uno
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Rating</legend>
+                <label for="rating">*Rate the game you selected:</label>
+                <label for="one-star">
+                    <input type="radio" id="one-star" name="rating" value="1" required>
+                    ⭐
+                </label>
+                <label for="two-stars">
+                    <input type="radio" id="two-stars" name="rating" value="2" required>
+                    ⭐⭐
+                </label>
+                <label for="three-stars">
+                    <input type="radio" id="three-stars" name="rating" value="3" required>
+                    ⭐⭐⭐
+                </label>
+                <label for="four-stars">
+                    <input type="radio" id="four-stars" name="rating" value="4" required>
+                    ⭐⭐⭐⭐
+                </label>
+                <label for="five-stars">
+                    <input type="radio" id="five-stars" name="rating" value="5" required>
+                    ⭐⭐⭐⭐⭐
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Comments</legend>
+                <label for="comments">Why do you like this game? (optional)</label>
+                <textarea id="comments" name="comments" rows="4" cols="150" placeholder="Your comments here..."></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label for="email">*Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Your email here...">
+                <label for="name">Name (optional):</label>
+                <input type="text" id="name" name="name" placeholder="Your name here...">
+            </fieldset>
+            <button type="submit">Rate Board Game</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Brayden Wayman. All rights reserved.</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
